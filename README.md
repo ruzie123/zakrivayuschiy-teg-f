@@ -1,1 +1,1 @@
-https://ruzie123.github.io/zakrivayuschiy-teg-f/
+https://github.com/ruzie123/zakrivayuschiy-teg-f.git
