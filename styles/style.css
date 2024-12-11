@@ -116,8 +116,8 @@
 }
 
 .card__text {
-  padding: 0 25px;
-  margin-bottom: 25px;
+  padding: 0 27px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   row-gap: 27px;
@@ -125,19 +125,20 @@
 
 .card__text-block {
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
 }
 
 .card__buttons {
   margin-right: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: flex;
+  gap: 2px;
   justify-content: flex-end;
   align-items: center;
 }
 
 .button {
+  cursor: pointer;
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
   transition: box-shadow 1s;
@@ -182,6 +183,8 @@
 }
 
 .card__icon-button {
+  padding: 0;
+  cursor: pointer;
   background-color: transparent;
   transition: border-color 0.3s ease;
   border: 2px solid transparent;
@@ -243,23 +246,6 @@
   }
 }
 
-@media (width <= 375px) {
-  .page {
-    width: 100%;
-  }
-
-  .save-button {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .floppy {
-    width: 21px;
-  }
-}
-
 .save-dialog {
   max-inline-size: 353px;
   position: fixed;
@@ -309,4 +295,21 @@
 .button .floppy {
   mix-blend-mode: difference;
   color: #fff;
+}
+
+@media (width <= 375px) {
+  .page {
+    width: 100%;
+  }
+
+  .save-button {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .floppy {
+    width: 21px;
+  }
 }
